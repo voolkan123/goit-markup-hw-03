@@ -160,8 +160,14 @@ margin-right: 50px;
     background-color:  var(--hero-background-color);
    
 }
-
+.hero-container {
+display: flex;
+flex-direction: column;
+padding-top: 200px;
+padding-bottom: 200px;
+}
 .hero-title{
+ width: 696px;   
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
@@ -169,12 +175,10 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--color-hero-title-h1-main);
-padding-top: 200px;
-padding-bottom: 200px;
-padding-left: 452px;
-padding-right: 452px;
+margin-left: auto;
+margin-right: auto; 
+margin-bottom: 30px;
 }
-
 .hero-button {
 font-weight: 700;
 font-size: 16px;
@@ -190,6 +194,8 @@ padding-right: 32px;
 padding-bottom: 10px;
 padding-left: 32px;
 justify-content: center;
+margin-left: auto;
+margin-right: auto;
 }
 
 .work-container {
@@ -220,6 +226,7 @@ letter-spacing: 0.03em;
 color: var(--primary-text-color);
  }
  
+
 .work-process-title {
     position: absolute; 
     width: 1px; 
@@ -233,16 +240,37 @@ color: var(--primary-text-color);
     overflow: hidden;
 }
 
+.work-process-div {
+    display: flex;
+    
+}
+
+.work-process-list {
+    display: flex;
+}
+
+.process-list-title {
+    margin-bottom: 10px;
+}
+
+.process-list:not(:last-child) {
+margin-right: 30px;
+}
+
+
 .whatwedo-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
+    text-align: center;
     letter-spacing: 0.03em;
     color: var(--headlines-color);
     margin-bottom: 50px;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    }
     
-}
+
 
 .work-list {
     display: flex;
@@ -274,6 +302,8 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--headlines-color);
 margin-bottom: 50px;
+margin-left: auto;
+margin-right: auto;
 }
 
 .team-member {
